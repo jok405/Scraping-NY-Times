@@ -1,6 +1,6 @@
-# Scraping-NY-Times
-Scrape and Comment on NY Times
+# Scraping-Reddit
+Scrape and Comment on Reddit
 
 Please check out the app in Heroku [here](https://###).
 
-Select headlines rerouted to the actual Times articles.
+Select headlines rerouted to the actual Reddit articles.
