@@ -9,7 +9,7 @@ Select headlines rerouted to the actual NY Times articles.
 ## Screenshots
 
 ### Home page
-![Home Page](/screenshots/hompage.png)
+![Home Page](/screenshots/homepage.png)
 
 ### Mobile Page
 ![Mobile Page](/screenshots/mobile.png)
