@@ -1,0 +1,31 @@
+{
+  "name": "ny-times",
+  "version": "1.0.0",
+  "description": "scraping",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jok405/Scraping-NY-Times.git"
+  },
+  "author": "J Y Kim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jok405/Scraping-NY-Times/issues"
+  },
+  "homepage": "https://github.com/jok405/Scraping-NY-Times#readme",
+  "dependencies": {
+    "body": "^5.1.0",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^5.0.9",
+    "papercss": "^1.4.1",
+    "parser": "^0.1.4",
+    "request": "^2.83.0"
+  },
+  "devDependencies": {}
+}
