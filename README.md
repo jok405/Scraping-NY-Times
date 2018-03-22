@@ -13,3 +13,6 @@ Select headlines rerouted to the actual NY Times articles.
 
 ### Mobile Page
 ![Mobile Page](/screenshots/mobile.png)
+
+### Notes Page
+![Notes Page](/screenshots/Notes.png)
