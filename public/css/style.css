@@ -1,0 +1,37 @@
+.nav-wrapper {
+  background-color: #d11a1a;
+}
+
+a#save {
+  margin-left: 12px;
+}
+
+.card-action a {
+  color: rgb(185, 184, 184) !important;
+}
+
+.delete-button {
+  margin-left: 10px;
+}
+.btn,
+.btn-large {
+  text-decoration: none;
+  color: #fff;
+  background-color: #d11a1a;
+}
+  .btn:hover,
+  .btn-large:hover {
+    background-color: #7e0f0f;
+  }
+
+  .secondary-content {
+    float: right;
+    color: #d11a1a;
+  }
+
+  html {
+    line-height: 1.5;
+    font-family: 'Jim Nightshade', cursive;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.87);
+  }

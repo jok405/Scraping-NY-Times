@@ -1,7 +1,7 @@
 // John Kim | University of Richmond | Scraping NY Times
 
-// Node Dependencies
 
+// Node Dependencies
 const express = require("express");
 const bodyParser = require("body-parser");
 const request = require("request");
@@ -12,17 +12,15 @@ const Article = require("./models/Article.js");
 const Save = require("./models/Save.js");
 
 const logger = require("morgan");
-const exphbs = require("express-handlebars");
+
 
 const cheerio = require("cheerio");
 const path = require("path");
 const app = express();
+
 const PORT = process.env.PORT || 3000;
-
-
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
 
-// Parse application/x-www-form-urlencoded
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
@@ -31,10 +29,6 @@ app.use(bodyParser.urlencoded({
 app.use(express.static("./public"));
 
 
-// Set mongoose to leverage built in JavaScript ES6 Promises
-// Connect to the Mongo DB
-
-    // this controls the scraping
 mongoose.Promise = Promise;
 mongoose.connect(MONGODB_URI, {
   useMongoClient: true
@@ -47,12 +41,6 @@ db.on('error', err => {
 db.once('open', () => {
     console.log("Mongoose connection is successful");
 });
-
-app.engine("handlebars", exphbs({
-    defaultLayout: "main"
-}));
-
-app.set("view engine", "handlebars");
 
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "views/index.html"));

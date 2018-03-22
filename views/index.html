@@ -8,16 +8,11 @@
 
 
     <title>Scraping NY-Times</title>
-    <!-- Compiled and minified CSS -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/papercss@1.4.1/dist/paper.min.css">
-
-
-
-    <!-- Compiled and minified JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+
     <link rel="stylesheet" href="/css/style.css"> 
     <script type="text/javascript" src="/javascript/homepage.js"></script>
     <script type="text/javascript" src="/javascript/saveArticle.js"></script>
@@ -28,13 +23,15 @@
     <div class="container-fluid">
         <nav>
             <div class="nav-wrapper">
+                <ul class="left hide-on-med-and-down">
+                    <button data-target="showBookmarked()" class="btn waves-effect waves-light black modal-trigger" onclick="showBookmarked()">BOOKMARKED ARTICLES</button>
+                </ul>
                 <a href="#!" class="brand-logo center">Mongo</a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse">
                     <i class="material-icons">menu</i>
                 </a>
-                <ul class="right hide-on-med-and-down">
-                    <button data-target="displaySaved()" class="btn waves-effect waves-light black modal-trigger" onclick="displaySaved()">BOOKMARKED ARTICLES</button>
-                    <button data-target="scrape-article" class="btn waves-effect waves-light black modal-trigger" onclick="displayScrape()">SCRAPE ARTICLES</button>
+                <ul class="right hide-on-med-and-down">                    
+                    <button data-target="scrape-article" class="btn waves-effect waves-light black modal-trigger" onclick="scrapeResult()">SCRAPE ARTICLES</button>
                 </ul>
             </div>
         </nav>
@@ -73,7 +70,7 @@
                 <h4 id="total-number"></h4>
             </div>
             <div class="modal-footer">
-                <a href="#" class="modal-action modal-close waves-effect waves-green btn">Close</a>
+                <a href="#" class="modal-action modal-close waves-effect waves-red btn">Close</a>
             </div>
         </div>
     </div>
@@ -87,7 +84,7 @@
             </form>
         </div>
         <div class="modal-footer">
-            <a href="#!" class="modal-action modal-close waves-effect waves-green btn" id="savenote">Save Note</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-red btn" id="savenote">Save Note</a>
         </div>
     </div>
 
